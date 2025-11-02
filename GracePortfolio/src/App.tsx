@@ -1,15 +1,17 @@
 import { ThemeProvider } from "styled-components";
+import Header from "./components/Headers.tsx";
 import { GlobalStyle } from "./styles/GlobalStyle";
-import { theme } from "./styles/theme";
+import { baseTheme } from "./styles/theme";
 import Home from "./pages/Home";
 
-function App() {
+export function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={baseTheme}>
       <GlobalStyle />
+      <Header />
       <Home />
     </ThemeProvider>
   );
 }
 
-export default App;
+
