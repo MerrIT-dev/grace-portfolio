@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
+Grace Hwang — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UX-driven Frontend Developer building thoughtful digital products.
 
-Currently, two official plugins are available:
+Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Demo
+https://your-portfolio-link.com
 
-## React Compiler
+GitHub Repository
+https://github.com/MerrIT-dev/grace-portfolio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+About This Project
 
-## Expanding the ESLint configuration
+This portfolio website showcases my work as a frontend developer focused on user experience, clean design, and modern web technologies.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The project highlights selected work, technical skills, and my approach to building thoughtful digital products.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Tech Stack
+Frontend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+React
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+TypeScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Styling
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tailwind CSS
+
+Tools
+
+Git
+
+GitHub
+
+VSCode
+
+Features
+
+Clean modern UI inspired by Apple design language
+
+Smooth navigation with anchor scrolling
+
+Modular React component architecture
+
+Responsive layout
+
+Sections
+
+Hero
+
+Projects
+
+About
+
+Contact
+
+Project Structure
+src
+ ├─ components
+ │   ├─ Hero.tsx
+ │   ├─ Navbar.tsx
+ │   ├─ Projects.tsx
+ │   ├─ About.tsx
+ │   ├─ Contact.tsx
+ │   └─ Footer.tsx
+ │
+ ├─ pages
+ │   └─ Home.tsx
+ │
+ └─ styles
+     └─ index.css
+Getting Started
+
+Clone the repository
+
+git clone https://github.com/MerrIT-dev/grace-portfolio.git
+
+Install dependencies
+
+npm install
+
+Run development server
+
+npm run dev
+
+
+Contact
+
+GitHub
+https://github.com/MerrIT-dev
+
+LinkedIn
+(Coming soon)
+
+Email
+(Coming soon)
+
+License
+
+MIT License
